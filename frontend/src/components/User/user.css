@@ -1,0 +1,46 @@
+/* User Container */
+.user-container {
+  margin: 20px auto;
+  padding: 20px;
+  width: 50%;
+  background-color: #fff;
+  color: #000;
+  border-radius: 8px;
+  border: 1px solid #444;
+  font-size: 10px;
+}
+.user-container h1 span {
+  font-size: 18px; /* Smaller size for labels */
+  color: #9e5bf0; /* Different color for labels */
+  font-weight: bold; /* Bold labels */
+}
+/* Update and Delete Buttons */
+.update,
+.delete {
+  display: inline-block;
+  padding: 6px 12px; /* Adjusted button padding */
+  margin: 10px 5px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px; /* Smaller font size for buttons */
+  cursor: pointer;
+}
+
+.update {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.update:hover {
+  background-color: #45a049;
+}
+
+.delete {
+  background-color: #f44336;
+  color: #fff;
+}
+
+.delete:hover {
+  background-color: #e53935;
+}

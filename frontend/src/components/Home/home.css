@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+.no-scroll {
+    overflow: hidden; /* Prevent scrolling on the home page */
+}
+
+  .home-background {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(to right, #1a1a1a, #3c3c3c);
+    color: #fff;
+    text-align: center;
+
+  }
+  
+  .homeh1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 20px 0;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .homeh1:hover {
+    transform: scale(1.05);
+    color: #ffcc00; /* Change color on hover */
+  }
+  

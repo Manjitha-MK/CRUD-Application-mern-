@@ -1,0 +1,82 @@
+/* Container for the registration form */
+.registration-container {
+  width: 400px;
+  margin: 50px auto;
+  margin-bottom: 20px;
+  padding: 30px;
+  background-color: #fff;
+  color: #000;
+  border-radius: 10px;
+  border: 1px solid #444;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Form heading */
+.registration-container h2 {
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+.reg-form {
+  border: 1px solid #444;
+}
+
+/* Form labels */
+.registration-container label {
+  font-size: 14px;
+  color: #595757;
+  margin-bottom: 8px;
+}
+
+/* Form inputs styling */
+.registration-container input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #444;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #000;
+}
+
+/* Input field focus */
+.registration-container input:focus {
+  outline: none;
+  border-color: #777;
+}
+
+/* Button styling */
+.registration-container button {
+  width: 50%;
+  padding: 12px;
+  margin-left: 25%;
+  background-color: rgba(104, 85, 224, 1);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+.registration-container button:hover {
+  background-color: #1e88e5;
+}
+
+/* Flex container for input fields */
+.in-reg {
+  display: flex;
+  padding: 29px;
+  margin: 10px 0;
+  flex-direction: column;
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 600px) {
+  .registration-container {
+    width: 90%;
+    padding: 20px;
+  }
+}

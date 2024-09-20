@@ -1,0 +1,93 @@
+/* Nav.css */
+
+/* Basic Styles */
+nav {
+  background-color: #333;
+  padding: 0.2rem 1rem; /* Compact padding */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  height: 50px; /* Reduced navbar height */
+  border-radius: 5px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap; /* Allows wrapping in smaller screens */
+}
+
+ul.left-links {
+  flex-grow: 1;
+}
+
+
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 0.85rem; /* Smaller font size */
+  padding: 0.2rem 0.6rem; /* Compact link padding */
+  transition: color 0.3s ease;
+}
+
+/* Hover effect */
+a:hover {
+  color: #ffdd57; /* Link color on hover */
+}
+
+.lo-btn {
+  color: white;
+  border: none;
+  padding: 0.2rem 0.6rem; /* Compact button padding */
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.85rem; /* Smaller font size for buttons */
+  transition: background-color 0.3s ease;
+  background-color: rgba(104, 85, 224, 1);
+  margin: 0 10px;
+  width: 200px;
+  padding: 10px 0;
+}
+
+.lo-btn:hover {
+  background-color: #e60000;
+}
+
+/* Flexbox Alignment */
+nav ul.left-links {
+  justify-content: flex-start;
+}
+
+nav ul.right-link {
+  justify-content: flex-end;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column; /* Stack navbar elements vertically on smaller screens */
+    height: auto; /* Adjust height for phone layout */
+  }
+
+  ul {
+    flex-direction: column; /* Stack the links vertically */
+    gap: 8px; /* Reduce gap between links */
+    width: 100%; /* Full width on mobile */
+    text-align: center; /* Center the links */
+  }
+
+  a {
+    font-size: 1rem; /* Slightly larger font size for better readability on mobile */
+    padding: 0.5rem 0.8rem; /* Increased padding for better touch targets */
+  }
+
+  .lo-btn {
+    font-size: 1rem; /* Larger button font size */
+    padding: 0.5rem 0.8rem; /* Increased button padding */
+  }
+}
